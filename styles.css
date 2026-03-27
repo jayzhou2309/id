@@ -35,7 +35,6 @@ body {
   font-family: var(--font-body);
   line-height: 1.6;
   overflow-x: hidden;
-  cursor: none;
   -webkit-font-smoothing: antialiased;
 }
 a { text-decoration: none; color: inherit; }
@@ -68,37 +67,8 @@ img { display: block; width: 100%; }
   90%{transform:translate(-10%,10%)}
 }
 
-/* ─── Custom Cursor ─────────────────────────────────────────── */
-.cursor {
-  position: fixed; top: 0; left: 0;
-  width: 36px; height: 36px;
-  border: 1px solid var(--accent);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 10000;
-  transform: translate(-50%, -50%);
-  transition: width 0.35s var(--ease), height 0.35s var(--ease),
-              border-color 0.3s, background 0.35s, opacity 0.3s;
-  mix-blend-mode: multiply;
-}
-.cursor-dot {
-  position: fixed; top: 0; left: 0;
-  width: 5px; height: 5px;
-  background: var(--accent);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 10001;
-  transform: translate(-50%, -50%);
-}
-.cursor.hovering {
-  width: 64px; height: 64px;
-  background: rgba(139,111,71,0.07);
-  border-color: var(--accent);
-}
-.cursor.clicking {
-  width: 28px; height: 28px;
-  background: rgba(139,111,71,0.15);
-}
+/* ─── Custom Cursor (disabled) ──────────────────────────────── */
+.cursor, .cursor-dot { display: none; }
 
 /* ─── Navigation ────────────────────────────────────────────── */
 .nav {
@@ -1132,5 +1102,4 @@ img { display: block; width: 100%; }
 
 @media (hover: none) {
   .cursor, .cursor-dot { display: none; }
-  body { cursor: auto; }
 }

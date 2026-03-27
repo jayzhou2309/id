@@ -10,51 +10,7 @@
   const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   const lerp = (a, b, t) => a + (b - a) * t;
 
-  // ─── Custom Cursor ────────────────────────────────────────────
-  const cursor    = $('#cursor');
-  const cursorDot = $('#cursorDot');
-  const isMobile  = () => window.matchMedia('(hover: none)').matches;
-
-  let mouse = { x: -200, y: -200 };
-  let cursorPos = { x: -200, y: -200 };
-  let rafCursor;
-
-  if (!isMobile() && cursor && cursorDot) {
-    document.addEventListener('mousemove', e => {
-      mouse.x = e.clientX;
-      mouse.y = e.clientY;
-      cursorDot.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%,-50%)`;
-    });
-
-    document.addEventListener('mouseleave', () => {
-      cursor.style.opacity = '0';
-      cursorDot.style.opacity = '0';
-    });
-
-    document.addEventListener('mouseenter', () => {
-      cursor.style.opacity = '1';
-      cursorDot.style.opacity = '1';
-    });
-
-    document.addEventListener('mousedown', () => cursor.classList.add('clicking'));
-    document.addEventListener('mouseup',   () => cursor.classList.remove('clicking'));
-
-    const hoverTargets = 'a, button, .ptile, .style-tile, .pcard, .tcard, .service-card, .btn, .btn-form, input, select, .acc-btn';
-    document.addEventListener('mouseover', e => {
-      if (e.target.closest(hoverTargets)) cursor.classList.add('hovering');
-    });
-    document.addEventListener('mouseout', e => {
-      if (e.target.closest(hoverTargets)) cursor.classList.remove('hovering');
-    });
-
-    function animateCursor() {
-      cursorPos.x = lerp(cursorPos.x, mouse.x, 0.12);
-      cursorPos.y = lerp(cursorPos.y, mouse.y, 0.12);
-      cursor.style.transform = `translate(${cursorPos.x}px, ${cursorPos.y}px) translate(-50%,-50%)`;
-      rafCursor = requestAnimationFrame(animateCursor);
-    }
-    animateCursor();
-  }
+  // ─── Custom Cursor (disabled — using default browser cursor) ──
 
   // ─── Sticky Nav ───────────────────────────────────────────────
   const nav = $('#nav');
