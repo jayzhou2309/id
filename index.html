@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cove Studio — Bespoke Residential Interiors, Singapore</title>
+  <meta name="description" content="Cove Studio is a premium residential interior design firm in Singapore. Bespoke interiors for HDB, condo, and landed homes — from concept to handover.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ═══════════════════════════════════ NAV ═══════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">COVE <span class="logo-accent">✦</span> STUDIO</a>
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#consultation" class="nav-cta-link">Book Consultation</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#consultation">Book Consultation</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════ HERO ═══════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <svg class="hero-floorplan" viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g stroke="#1C1C1A" fill="none">
+          <rect x="30" y="30" width="460" height="360" stroke-width="1.5"/>
+          <line x1="210" y1="30" x2="210" y2="220" stroke-width="1"/>
+          <line x1="210" y1="220" x2="490" y2="220" stroke-width="1"/>
+          <line x1="30" y1="165" x2="210" y2="165" stroke-width="1"/>
+          <line x1="210" y1="115" x2="490" y2="115" stroke-width="1"/>
+          <line x1="350" y1="30" x2="350" y2="115" stroke-width="1"/>
+          <line x1="350" y1="220" x2="350" y2="390" stroke-width="1"/>
+          <line x1="30" y1="290" x2="210" y2="290" stroke-width="1"/>
+          <line x1="120" y1="165" x2="120" y2="290" stroke-width="0.75"/>
+          <!-- Door swings -->
+          <path d="M210 250 Q248 250 248 288" stroke-width="0.6"/>
+          <line x1="210" y1="250" x2="210" y2="288" stroke-width="0.6"/>
+          <path d="M90 165 Q90 135 120 135" stroke-width="0.6"/>
+          <line x1="90" y1="165" x2="120" y2="165" stroke-width="0.6"/>
+          <path d="M380 115 Q380 85 410 85" stroke-width="0.6"/>
+          <line x1="380" y1="115" x2="410" y2="115" stroke-width="0.6"/>
+          <!-- Window markers -->
+          <line x1="280" y1="30" x2="340" y2="30" stroke-width="2.5"/>
+          <line x1="430" y1="30" x2="475" y2="30" stroke-width="2.5"/>
+          <line x1="490" y1="150" x2="490" y2="200" stroke-width="2.5"/>
+          <!-- Annotation dots -->
+          <circle cx="115" cy="95" r="2.5" fill="#1C1C1A"/>
+          <circle cx="115" cy="230" r="2.5" fill="#1C1C1A"/>
+          <circle cx="280" cy="68" r="2.5" fill="#1C1C1A"/>
+          <circle cx="420" cy="68" r="2.5" fill="#1C1C1A"/>
+          <circle cx="420" cy="165" r="2.5" fill="#1C1C1A"/>
+          <circle cx="280" cy="305" r="2.5" fill="#1C1C1A"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-pill">✦ Now Accepting Projects for Q3 2025</div>
+      <h1 class="hero-headline">
+        <span class="hl-thin">Spaces Designed</span>
+        <span class="hl-bold">Around You.</span>
+      </h1>
+      <p class="hero-sub">Bespoke residential interiors for HDB, condo, and landed homes across Singapore. From concept to handover, we handle everything.</p>
+      <div class="hero-ctas">
+        <a href="#consultation" class="btn btn-primary">Start Your Project</a>
+        <a href="#work" class="btn btn-ghost">View Our Work</a>
+      </div>
+      <div class="hero-rule">
+        <span class="rule-line"></span>
+        <span class="rule-diamond">✦</span>
+        <span class="rule-line"></span>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span class="scroll-label">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ PORTFOLIO ═══════════════════════════════ -->
+  <section class="section portfolio" id="work">
+    <div class="section-inner">
+      <div class="section-tag fade-up">OUR WORK</div>
+      <h2 class="section-headline fade-up">Every Room Has a Story.</h2>
+      <div class="portfolio-grid">
+        <div class="ptile ptile-large">
+          <div class="ptile-bg bg-1"></div>
+          <div class="ptile-overlay">
+            <div class="ptile-info">
+              <span class="ptile-name">The Cairnhill Penthouse</span>
+              <span class="ptile-meta">Orchard · 3,200 sqft</span>
+              <a href="#" class="ptile-link">View Project →</a>
+            </div>
+          </div>
+        </div>
+        <div class="ptile">
+          <div class="ptile-bg bg-2"></div>
+          <div class="ptile-overlay">
+            <div class="ptile-info">
+              <span class="ptile-name">Parc Clematis</span>
+              <span class="ptile-meta">Clementi · Modern Japandi</span>
+              <a href="#" class="ptile-link">View Project →</a>
+            </div>
+          </div>
+        </div>
+        <div class="ptile">
+          <div class="ptile-bg bg-3"></div>
+          <div class="ptile-overlay">
+            <div class="ptile-info">
+              <span class="ptile-name">Skyline @ Jurong</span>
+              <span class="ptile-meta">4-Room HDB Renovation</span>
+              <a href="#" class="ptile-link">View Project →</a>
+            </div>
+          </div>
+        </div>
+        <div class="ptile">
+          <div class="ptile-bg bg-4"></div>
+          <div class="ptile-overlay">
+            <div class="ptile-info">
+              <span class="ptile-name">Sentosa Cove Villa</span>
+              <span class="ptile-meta">Contemporary Coastal</span>
+              <a href="#" class="ptile-link">View Project →</a>
+            </div>
+          </div>
+        </div>
+        <div class="ptile">
+          <div class="ptile-bg bg-5"></div>
+          <div class="ptile-overlay">
+            <div class="ptile-info">
+              <span class="ptile-name">The Atelier Study</span>
+              <span class="ptile-meta">Home Office Conversion</span>
+              <a href="#" class="ptile-link">View Project →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ SERVICES ═══════════════════════════════ -->
+  <section class="section services" id="services">
+    <div class="section-inner">
+      <div class="section-tag fade-up">WHAT WE OFFER</div>
+      <h2 class="section-headline fade-up">Full-Service Design,<br>Start to Finish.</h2>
+      <div class="services-grid">
+        <div class="service-card fade-up">
+          <span class="service-num">01</span>
+          <h3 class="service-name">Interior Design</h3>
+          <p class="service-desc">Spatial planning, mood boarding, material selection, and 3D visualisation. We design spaces that reflect how you actually live.</p>
+          <div class="service-bar"></div>
+        </div>
+        <div class="service-card fade-up">
+          <span class="service-num">02</span>
+          <h3 class="service-name">Renovation Management</h3>
+          <p class="service-desc">We manage your entire renovation — contractors, timelines, and quality control. You don't need to chase anyone.</p>
+          <div class="service-bar"></div>
+        </div>
+        <div class="service-card fade-up">
+          <span class="service-num">03</span>
+          <h3 class="service-name">Furniture &amp; Styling</h3>
+          <p class="service-desc">Curated furniture sourcing, soft furnishings, and final styling. We make sure every corner is considered.</p>
+          <div class="service-bar"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ ABOUT ══════════════════════════════════ -->
+  <section class="section about" id="about">
+    <div class="about-inner">
+      <div class="about-left fade-up">
+        <blockquote class="about-quote">
+          "We don't design for trends. We design for the way you live, the way light moves through your home, and the way a room should make you feel."
+        </blockquote>
+      </div>
+      <div class="about-right fade-up">
+        <div class="section-tag">OUR PHILOSOPHY</div>
+        <p class="about-body">
+          Cove Studio was founded on the belief that great interiors aren't about following a style — they're about understanding a person. Every project begins with a conversation. Every finish, a decision made with intention. We work with a small number of clients each year to ensure every home receives our full attention.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <div class="stat-row">
+              <span class="stat-num" data-target="120">0</span><span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Homes Transformed</span>
+          </div>
+          <div class="stat">
+            <div class="stat-row">
+              <span class="stat-num" data-target="9">0</span>
+            </div>
+            <span class="stat-label">Years in Practice</span>
+          </div>
+          <div class="stat">
+            <div class="stat-row">
+              <span class="stat-num" data-target="100">0</span><span class="stat-suffix">%</span>
+            </div>
+            <span class="stat-label">Client Referral Rate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ PROCESS ══════════════════════════════════ -->
+  <section class="section process" id="process">
+    <div class="section-inner">
+      <div class="section-tag fade-up">HOW WE WORK</div>
+      <h2 class="section-headline fade-up">A Process Built for Clarity.</h2>
+
+      <!-- Desktop timeline -->
+      <div class="process-timeline" id="processTimeline">
+        <div class="timeline-track">
+          <div class="timeline-fill" id="timelineFill"></div>
+        </div>
+        <div class="timeline-steps">
+          <div class="timeline-step" data-step="0">
+            <div class="step-node"><span>01</span></div>
+            <h4 class="step-title">Discovery</h4>
+            <p class="step-desc">We learn how you live, what you love, and what you need.</p>
+          </div>
+          <div class="timeline-step" data-step="1">
+            <div class="step-node"><span>02</span></div>
+            <h4 class="step-title">Concept Design</h4>
+            <p class="step-desc">Mood boards, spatial layouts, and material palettes.</p>
+          </div>
+          <div class="timeline-step" data-step="2">
+            <div class="step-node"><span>03</span></div>
+            <h4 class="step-title">3D Visualisation</h4>
+            <p class="step-desc">See your home before a single wall is touched.</p>
+          </div>
+          <div class="timeline-step" data-step="3">
+            <div class="step-node"><span>04</span></div>
+            <h4 class="step-title">Renovation Works</h4>
+            <p class="step-desc">We manage contractors, timelines, and site quality.</p>
+          </div>
+          <div class="timeline-step" data-step="4">
+            <div class="step-node"><span>05</span></div>
+            <h4 class="step-title">Styling &amp; Handover</h4>
+            <p class="step-desc">Final furniture, accessories, and your new home.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile accordion -->
+      <div class="process-accordion" id="processAccordion">
+        <div class="acc-item">
+          <button class="acc-btn"><span class="acc-num">01</span><span class="acc-title">Discovery</span><span class="acc-icon">+</span></button>
+          <div class="acc-body"><p>We learn how you live, what you love, and what you need.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn"><span class="acc-num">02</span><span class="acc-title">Concept Design</span><span class="acc-icon">+</span></button>
+          <div class="acc-body"><p>Mood boards, spatial layouts, and material palettes.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn"><span class="acc-num">03</span><span class="acc-title">3D Visualisation</span><span class="acc-icon">+</span></button>
+          <div class="acc-body"><p>See your home before a single wall is touched.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn"><span class="acc-num">04</span><span class="acc-title">Renovation Works</span><span class="acc-icon">+</span></button>
+          <div class="acc-body"><p>We manage contractors, timelines, and site quality.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn"><span class="acc-num">05</span><span class="acc-title">Styling &amp; Handover</span><span class="acc-icon">+</span></button>
+          <div class="acc-body"><p>Final furniture, accessories, and your new home.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ DESIGN STYLES ════════════════════════════════ -->
+  <section class="section design-styles" id="styles">
+    <div class="section-inner">
+      <div class="section-tag fade-up">OUR STYLES</div>
+      <h2 class="section-headline fade-up">Find Your Aesthetic.</h2>
+    </div>
+    <div class="styles-scroll-wrap" id="stylesScrollWrap">
+      <div class="styles-row" id="stylesRow">
+        <div class="style-tile">
+          <div class="style-bg style-japandi"></div>
+          <div class="style-info">
+            <span class="style-name">Japandi</span>
+            <span class="style-desc">Quiet. Warm. Intentional.</span>
+          </div>
+        </div>
+        <div class="style-tile">
+          <div class="style-bg style-contemporary"></div>
+          <div class="style-info">
+            <span class="style-name">Contemporary</span>
+            <span class="style-desc">Clean lines. Functional beauty.</span>
+          </div>
+        </div>
+        <div class="style-tile">
+          <div class="style-bg style-wabisabi"></div>
+          <div class="style-info">
+            <span class="style-name">Wabi-Sabi</span>
+            <span class="style-desc">Raw textures. Imperfect perfection.</span>
+          </div>
+        </div>
+        <div class="style-tile">
+          <div class="style-bg style-luxury"></div>
+          <div class="style-info">
+            <span class="style-name">Modern Luxury</span>
+            <span class="style-desc">Refined. Layered. Considered.</span>
+          </div>
+        </div>
+        <div class="style-tile">
+          <div class="style-bg style-muji"></div>
+          <div class="style-info">
+            <span class="style-name">Muji-Inspired</span>
+            <span class="style-desc">Minimal. Calm. Everything in its place.</span>
+          </div>
+        </div>
+        <div class="style-tile">
+          <div class="style-bg style-eclectic"></div>
+          <div class="style-info">
+            <span class="style-name">Eclectic</span>
+            <span class="style-desc">Collected, not decorated.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ TESTIMONIALS ════════════════════════════════ -->
+  <section class="section testimonials" id="testimonials">
+    <div class="section-inner">
+      <div class="section-tag fade-up">CLIENT STORIES</div>
+      <h2 class="section-headline fade-up">Homes They Love Living In.</h2>
+      <div class="testimonials-grid">
+        <div class="tcard fade-up">
+          <div class="tcard-top-bar"></div>
+          <span class="tcard-quote-mark">"</span>
+          <p class="tcard-text">Cove Studio transformed our 5-room HDB into something we genuinely didn't think was possible. Every detail was considered. The process was smooth from start to end.</p>
+          <div class="tcard-footer">
+            <span class="tcard-stars">★★★★★</span>
+            <span class="tcard-client">Melissa &amp; Jonathan H.</span>
+            <span class="tcard-location">Bishan</span>
+          </div>
+        </div>
+        <div class="tcard fade-up">
+          <div class="tcard-top-bar"></div>
+          <span class="tcard-quote-mark">"</span>
+          <p class="tcard-text">We'd been putting off our renovation for 3 years because we didn't trust any ID firm. Cove changed that. Professional, honest, and genuinely talented.</p>
+          <div class="tcard-footer">
+            <span class="tcard-stars">★★★★★</span>
+            <span class="tcard-client">Raymond T.</span>
+            <span class="tcard-location">Parc Clematis Condo</span>
+          </div>
+        </div>
+        <div class="tcard fade-up">
+          <div class="tcard-top-bar"></div>
+          <span class="tcard-quote-mark">"</span>
+          <p class="tcard-text">They took our messy brief and turned it into a home that feels like us. The 3D renders were so accurate — no surprises at handover.</p>
+          <div class="tcard-footer">
+            <span class="tcard-stars">★★★★★</span>
+            <span class="tcard-client">Priscilla K.</span>
+            <span class="tcard-location">Tampines HDB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ PRICING ════════════════════════════════ -->
+  <section class="section pricing" id="pricing">
+    <div class="section-inner">
+      <div class="section-tag fade-up">INVESTMENT</div>
+      <h2 class="section-headline fade-up">Transparent Pricing. No Surprises.</h2>
+      <div class="pricing-grid">
+        <div class="pcard fade-up">
+          <div class="pcard-tier">HDB Package</div>
+          <div class="pcard-price">From <strong>S$25,000</strong></div>
+          <ul class="pcard-features">
+            <li>3–5 room HDB</li>
+            <li>Space planning + ID drawings</li>
+            <li>Material and finish selection</li>
+            <li>Renovation management</li>
+            <li>Furniture sourcing guide</li>
+          </ul>
+          <a href="#consultation" class="btn btn-outline">Get a Quote</a>
+        </div>
+        <div class="pcard pcard-featured fade-up">
+          <div class="pcard-badge">Most Popular</div>
+          <div class="pcard-tier">Condo Package</div>
+          <div class="pcard-price">From <strong>S$45,000</strong></div>
+          <ul class="pcard-features">
+            <li>2–4 bedroom condo</li>
+            <li>Full concept design + 3D renders</li>
+            <li>Complete renovation management</li>
+            <li>Curated furniture sourcing</li>
+            <li>Final styling and handover</li>
+          </ul>
+          <a href="#consultation" class="btn btn-accent">Get a Quote</a>
+        </div>
+        <div class="pcard fade-up">
+          <div class="pcard-tier">Landed / Bespoke</div>
+          <div class="pcard-price"><strong>Custom Pricing</strong></div>
+          <ul class="pcard-features">
+            <li>Landed properties and penthouses</li>
+            <li>Full architectural collaboration</li>
+            <li>Custom furniture and joinery</li>
+            <li>White-glove project management</li>
+            <li>Dedicated design director</li>
+          </ul>
+          <a href="#consultation" class="btn btn-outline">Let's Talk</a>
+        </div>
+      </div>
+      <p class="pricing-note fade-up">Prices are indicative. Final quote provided after consultation.</p>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ CONSULTATION ════════════════════════════════ -->
+  <section class="section consultation" id="consultation">
+    <div class="section-inner">
+      <h2 class="consult-headline fade-up">Your Home<br>Is Waiting.</h2>
+      <p class="consult-sub fade-up">Book a complimentary 30-minute consultation. No obligations — just a conversation about your space.</p>
+      <form class="consult-form fade-up" id="consultForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="fphone">Phone Number</label>
+            <input type="tel" id="fphone" name="phone" placeholder="+65 9XXX XXXX" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="femail">Email Address</label>
+            <input type="email" id="femail" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="fproperty">Property Type</label>
+            <select id="fproperty" name="property" required>
+              <option value="" disabled selected>Select property type</option>
+              <option value="hdb">HDB</option>
+              <option value="condo">Condo</option>
+              <option value="landed">Landed</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fbudget">Project Budget</label>
+            <select id="fbudget" name="budget" required>
+              <option value="" disabled selected>Select budget range</option>
+              <option value="25-40">S$25,000 – S$40,000</option>
+              <option value="40-60">S$40,000 – S$60,000</option>
+              <option value="60-80">S$60,000 – S$80,000</option>
+              <option value="80-100">S$80,000 – S$100,000</option>
+              <option value="100+">S$100,000+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="freferral">How Did You Hear About Us?</label>
+            <select id="freferral" name="referral">
+              <option value="" disabled selected>Select an option</option>
+              <option value="instagram">Instagram</option>
+              <option value="google">Google Search</option>
+              <option value="referral">Friend / Referral</option>
+              <option value="houzz">Houzz</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn-form" id="submitBtn">Book Free Consultation →</button>
+        <p class="form-note">We take on a limited number of projects per quarter to ensure quality. Slots fill fast.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ FOOTER ════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">COVE <span>✦</span> STUDIO</div>
+          <p class="footer-tagline">Interiors designed around life.</p>
+          <a href="https://instagram.com/covestudio.sg" class="footer-instagram" target="_blank" rel="noopener">@covestudio.sg</a>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h5>Work</h5>
+            <ul>
+              <li><a href="#work">Portfolio</a></li>
+              <li><a href="#styles">Our Styles</a></li>
+              <li><a href="#testimonials">Client Stories</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#services">Interior Design</a></li>
+              <li><a href="#services">Renovation Management</a></li>
+              <li><a href="#services">Furniture &amp; Styling</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Studio</h5>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#process">Our Process</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-contact">
+            <h5>Contact</h5>
+            <p>88 Robinson Road, #12-01<br>Singapore 068898</p>
+            <a href="mailto:hello@covestudio.sg">hello@covestudio.sg</a>
+            <a href="tel:+6591234567">+65 9123 4567</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Cove Studio Pte Ltd. All rights reserved.</span>
+        <span class="footer-badge">HDB Licensed Renovation Contractor · BCA Registered</span>
+        <span>Site by Cove Creative</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA -->
+  <a href="#consultation" class="floating-cta" id="floatingCta">Book Consultation</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
