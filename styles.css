@@ -417,14 +417,14 @@ img { display: block; width: 100%; }
   transition: transform 0.8s var(--ease);
 }
 .ptile:hover .ptile-bg { transform: scale(1.06); }
-.bg-1 { background: linear-gradient(148deg, #C8BEB2 0%, #B0A698 22%, #A09080 45%, #BEB2A4 68%, #CAC0B2 100%); }
-.bg-2 { background: linear-gradient(158deg, #C0CABE 0%, #AABAA8 35%, #B8C4B4 60%, #C8D0C4 100%); }
-.bg-3 { background: linear-gradient(128deg, #D4CCBF 0%, #C6BEB2 38%, #D2CAC0 72%, #CAC4B8 100%); }
-.bg-4 { background: linear-gradient(148deg, #C2CDD0 0%, #CCd6D8 32%, #B8C4C6 60%, #C6D0D2 100%); }
-.bg-5 { background: linear-gradient(138deg, #CABB9E 0%, #BFAF92 42%, #C8BB9C 75%, #C2B898 100%); }
+.bg-1 { background: url('cairnhill penthouse.jpg') center/cover no-repeat; }
+.bg-2 { background: url('parc clemaatis.jpg') center/cover no-repeat; }
+.bg-3 { background: url('skyline jurong.jpg') center/cover no-repeat; }
+.bg-4 { background: url('sentosa villa.jpg') center/cover no-repeat; }
+.bg-5 { background: url('home office conversion.jpg') center/cover no-repeat; }
 .ptile-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(18,16,14,0.88) 0%, rgba(18,16,14,0.28) 50%, transparent 80%);
+  background: linear-gradient(to top, rgba(14,12,10,0.92) 0%, rgba(14,12,10,0.38) 45%, rgba(14,12,10,0.08) 75%, transparent 100%);
   opacity: 0;
   transition: opacity 0.55s var(--ease);
   display: flex; align-items: flex-end;
@@ -716,16 +716,16 @@ img { display: block; width: 100%; }
   transition: transform 0.65s var(--ease);
 }
 .style-tile:hover .style-bg { transform: scale(1.05); }
-.style-japandi       { background: linear-gradient(162deg, #D6D0C8 0%, #C8C0B6 38%, #D0C8BE 100%); }
-.style-contemporary  { background: linear-gradient(142deg, #CDCDCB 0%, #D8D8D6 38%, #C4C4C2 100%); }
-.style-wabisabi      { background: linear-gradient(152deg, #CCBFA0 0%, #BAB08E 42%, #C8BC9A 100%); }
-.style-luxury        { background: linear-gradient(158deg, #272523 0%, #362E2A 48%, #2A2422 100%); }
-.style-muji          { background: linear-gradient(148deg, #EBE7E0 0%, #F2EFE9 48%, #E6E2DB 100%); }
-.style-eclectic      { background: linear-gradient(162deg, #CCB69A 0%, #D4C0AA 32%, #C0AC90 62%, #C8B69A 100%); }
+.style-japandi       { background: url('japandi.jpg') center/cover no-repeat; }
+.style-contemporary  { background: url('comtemporary.jpg') center/cover no-repeat; }
+.style-wabisabi      { background: url('wabi sabi.jpg') center/cover no-repeat; }
+.style-luxury        { background: url('modern luxury.jpg') center/cover no-repeat; }
+.style-muji          { background: url('muji.jpg') center/cover no-repeat; }
+.style-eclectic      { background: url('eclectric.jpg') center/cover no-repeat; }
 .style-info {
   position: absolute; bottom: 0; left: 0; right: 0;
   padding: 22px 24px 28px;
-  background: linear-gradient(to top, rgba(18,16,14,0.78) 0%, rgba(18,16,14,0.18) 60%, transparent 100%);
+  background: linear-gradient(to top, rgba(14,12,10,0.88) 0%, rgba(14,12,10,0.42) 50%, transparent 100%);
 }
 .style-name {
   display: inline-block;
